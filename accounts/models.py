@@ -76,4 +76,9 @@ class User(AbstractBaseUser):
         return True
 
 
+class UserProfile(models.Model):
+    user = OneToOneField(User, on_delete=models.CASCADE)
+
+
+
 
