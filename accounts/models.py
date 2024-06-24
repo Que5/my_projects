@@ -102,7 +102,7 @@ class UserProfile(models.Model):
 def post_save_create_profile_reciever(sender, instance, created, **kwargs):
     print(created)
     if created:
-        print('create the user profile')
+        print('Create the user profile')
 
 # post_save.connect(post_save_create_profile_reciever, sender=User)
 
