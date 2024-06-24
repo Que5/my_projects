@@ -92,8 +92,8 @@ class UserProfile(models.Model):
     modified_at = models.DateTimeField(auto_now=True)
 
 
-def __str__(self):
-    return self.user.email
+    def __str__(self):
+        return self.user.email
 
 
 
