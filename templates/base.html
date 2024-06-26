@@ -35,10 +35,15 @@
 <body>
 
     <!--LOAD NAVBAR HERE-->
+    {% include 'includes/navbar.html' %}
 
     <!--LOAD CONTENT HERE-->
+    {% block content %}
+         <!--CONTENT GOES HERE-->
+    {% endblock %}
 
     <!--LOAD FOOTER HERE-->
+    {% include 'includes/footer.html' %}
 
     
 		
