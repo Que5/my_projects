@@ -3,4 +3,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def registerUser(request):
-    return render ('This is a test')
+    return render (request, 'accounts/registerUser.html')
